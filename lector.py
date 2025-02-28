@@ -5,5 +5,5 @@ def read_csv(name_csv):
     df = pd.read_excel(f"uploads/{name_csv}", engine="openpyxl")
 
     # Imprimir las columnas del DataFrame
-    nombres = df["Nombres y Apellidos"].dropna().tolist()
+    nombres = df["NOMBRES Y APELLIDOS"].dropna().tolist()
     return nombres
